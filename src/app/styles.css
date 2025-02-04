@@ -1,0 +1,349 @@
+/* Navbar container */
+.navbar-container {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 50;
+    background: linear-gradient(to right, rgba(128, 0, 128, 0.3), rgba(255, 105, 180, 0.4));
+    backdrop-filter: blur(5px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  /* Navbar structure */
+  .navbar {
+    color: #333;
+    font-family: Arial, sans-serif;
+  }
+  
+  .navbar-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px 20px;
+  }
+  
+  /* Logo */
+  .logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+  }
+  
+  .logo-img {
+    width: 62px;
+  }
+  
+  .logo-text {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-left: 10px;
+    display: none;
+  }
+  
+  @media (min-width: 640px) {
+    .logo-text {
+      display: inline-block;
+    }
+  }
+  
+  /* Navigation Links */
+  .nav-links {
+    display: flex;
+    gap: 20px;
+    font-size: 1rem;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links a:hover {
+    color: #c2185b;
+  }
+  
+  /* Download Button */
+  .download-btn-container {
+    display: inline-block;
+    border-radius: 10px;
+    background: linear-gradient(to right, rgba(128, 0, 128, 0.3), rgba(255, 105, 180, 0.4));
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+  }
+  
+  .download-btn {
+    display: flex;
+    align-items: center;
+    background: none;
+    border: none;
+    padding: 8px 16px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    color: #444;
+    transition: background 0.3s ease;
+  }
+  
+  .download-btn:hover {
+    background: linear-gradient(to right, rgba(128, 0, 128, 0.4), rgba(255, 105, 180, 0.6));
+  }
+  
+  .download-icon {
+    margin-left: 10px;
+    font-size: 1.2rem;
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .nav-links {
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+    
+    .navbar-inner {
+      flex-direction: column;
+    }
+  
+    .download-btn {
+      font-size: 0.9rem;
+      padding: 6px 12px;
+    }
+  }
+  /* Footer Container */
+.footer {
+    background: linear-gradient(to right, rgba(128, 0, 128, 0.3), rgba(255, 182, 193, 0.4));
+    backdrop-filter: blur(5px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 20px 0;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Footer Inner Wrapper */
+  .footer-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px 20px;
+    flex-wrap: wrap;
+  }
+  
+  /* Footer Logo */
+  .footer-logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+  }
+  
+  .footer-logo-img {
+    width: 80px;
+  }
+  
+  .footer-text {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-left: 10px;
+  }
+  
+  /* Copyright Text */
+  .footer-copyright {
+    font-size: 0.9rem;
+    color: #666;
+    border-left: 2px solid #ccc;
+    padding-left: 15px;
+    margin: 10px 0;
+  }
+  
+  /* Footer Social Icons */
+  .footer-icons {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .footer-icon {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .footer-icon:hover {
+    transform: scale(1.1) translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Individual Icon Colors */
+  .instagram {
+    color: #e4405f;
+  }
+  
+  .facebook {
+    color: #1877f2;
+  }
+  
+  .linkedin {
+    color: #0a66c2;
+  }
+  
+  .github {
+    color: #333;
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .footer-inner {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .footer-copyright {
+      border-left: none;
+      padding-left: 0;
+      margin-top: 10px;
+    }
+  
+    .footer-icons {
+      justify-content: center;
+      margin-top: 10px;
+    }
+  }
+  /* About Section */
+.about-section {
+  background-color: #e9d5ff;
+  padding: 50px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* About Container */
+.about-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* About Title */
+.about-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  background: linear-gradient(to right, #6b21a8, #9d174d);
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+/* About Title Divider */
+.about-divider {
+  width: 150px;
+  height: 3px;
+  background: linear-gradient(to right, rgba(219, 39, 119, 0.7), rgba(107, 33, 168, 0.7));
+  margin: 10px auto 0;
+  animation: slide 1s ease-in-out infinite alternate;
+}
+
+@keyframes slide {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
+
+/* About Content */
+.about-content {
+  background-color: #d8b4fe;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: left;
+}
+
+/* About Heading */
+.about-heading {
+  font-size: 2rem;
+  color: #581c87;
+  padding-bottom: 10px;
+}
+
+/* About Text */
+.about-text {
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.6;
+}
+.contact-section {
+  background-color: #f3e8ff;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.container {
+  width: 50%;
+  margin: auto;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.header h1 {
+  color: #6b21a8;
+  font-size: 2rem;
+}
+
+.form-container {
+  margin-top: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  font-size: 1rem;
+  color: #333;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #6b21a8;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.submit-btn {
+  background: linear-gradient(to right, #6b21a8, #d946ef);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.submit-btn:hover {
+  background: linear-gradient(to right, #5a189a, #bf40bf);
+}
+
+  
